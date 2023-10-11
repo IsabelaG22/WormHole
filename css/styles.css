@@ -1,0 +1,855 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span #nj1::before {
+    content: Producto;
+}
+
+body {
+    background-image: linear-gradient(90deg, #000, #1B1B33);
+}
+
+.fondo-de-info{
+    background-color: rgba(0, 0, 0, .3);
+    margin-left: 200px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction:column;
+}
+
+.letra{
+    color: #fff;
+}
+
+:-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+/*fin barra lateral*/
+/*cabecera*/
+
+
+
+#header {
+    min-width: 1024px;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 5000px;
+
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header {
+    width: 0px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+#header #logotipo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    text-shadow: 1px 3px 1px #fff;
+    transition: all 300ms;
+}
+
+#header h1:hover {
+
+    text-shadow: 3px 2px 1px #fff;
+    animation: 0px 0px 4px #9c8e14;
+}
+
+/* barra de navegacion */
+
+#busqueda {
+    margin-top: 8px;
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    margin-left: 220px;
+    position: fixed;
+}
+
+#busqueda #barra {
+    width: 100%;
+    background-color: #141414;
+    color: #fff;
+    height: 30px;
+    border: none;
+}
+
+#boton {
+    display: block;
+    background-color: #141414;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 30px;
+    margin-left: 69%;
+    margin-top: 10px;
+    z-index: 1;
+    position: fixed;
+}
+
+#boton:hover {
+    background-color: #8B888C;
+    border-bottom: 0px;
+}
+
+.mas {
+    font-size: 25px;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    z-index: 1000;
+}
+
+#nav {
+    border: #000 2px;
+    width: 90%;
+    height: 42px;
+    background: transparent;
+    color: white;
+    font-family: sans-serif, Helvetica, arial;
+    font-size: 14px;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 50px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row;
+    z-index: 10;
+}
+
+.cont ul {
+    display: none;
+
+}
+
+.cont ul ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+.cont:hover .con {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 200px;
+    display: block;
+}
+
+.cont>ul>li {
+    line-height: 40px;
+    border-bottom: 2px gray;
+    border: 1px solid #141414;
+    transition: all 300ms;
+    background-color: #dfdfe7;
+    width: 150px;
+}
+
+#nav>.cont>ul>li a {
+    display: block;
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+#nav>.cont>ul>li>a:first-child {
+    border-left: 1px solid #fff;
+}
+
+#nav>.cont>ul>li:hover {
+    background-color: #0a141f;
+    box-shadow: 0px 3px 4px #28415E;
+    padding-bottom: 10px;
+}
+
+#nav>.cont>ul>li:hover a {
+    color: #fff;
+}
+
+/*Ocultar el menu desplegable*/
+#nav>.cont>ul>li>ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px #1B1B33;
+
+}
+
+#nav>.cont>ul>li:hover>ul {
+    display: block;
+    list-style: none;
+    border: none;
+    box-shadow: 0;
+}
+
+#nav>.cont>ul>li:hover>ul>li {
+    background-color: #dfdfe7;
+    border-bottom: 1px solid #666666;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms;
+    color: #000000;
+    width: 135px;
+}
+
+#nav>.cont>ul>li:hover>ul a {
+    color: #000000;
+    box-shadow: #f2f1f0 inset;
+
+}
+
+#nav>.cont>ul>li:hover>ul>li:hover {
+    background-color: #0a141f;
+    box-shadow: 0px 3px 4px #28415E;
+    padding-bottom: 10px;
+}
+
+#nav>.cont>ul>li:hover>ul>li:hover a {
+    color: #dfdfe7;
+}
+
+/* fin del menu */
+/* banner */
+
+.fond {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    left: 0;
+    width: 100%;
+
+}
+
+.ruleta {
+    margin-left: 50px;
+    height: 400px;
+    width: 90%;
+    animation-name: ruleta;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+@keyframes ruleta {
+
+    0%,
+    20% {
+        background-image: url(../imgen/fnaf/five.png);
+    }
+
+    20%,
+    40% {
+        background-image: url(../imgen/cubo.png);
+    }
+
+    40%,
+    60% {
+        background-image: url(../imgen/poppy/poppy.png);
+    }
+
+    60%,
+    80% {
+        background-image: url(../imgen/red_dead/rojo.png);
+    }
+
+    80%,
+    100% {
+        background-image: url(../imgen/undertale/sans.png);
+    }
+}
+
+.titulo::before {
+    content: " ";
+    animation-name: titulo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+
+.fonti {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border-radius: 5px;
+}
+
+@keyframes titulo {
+
+    0%,
+    20% {
+        content: "Five Night at Freddy's";
+    }
+
+    20%,
+    40% {
+        content: "Geometry Dash";
+    }
+
+    40%,
+    60% {
+        content: "Poopy PlayTime";
+    }
+
+    60%,
+    80% {
+        content: "Red Dead Redemption 2";
+    }
+
+    80%,
+    100% {
+        content: "Undertale";
+
+    }
+}
+
+/*jueguitos*/
+
+.juego {
+    position: relative;
+    display: block;
+    background: #202d39;
+    background: rgba(0, 0, 0, 0.2);
+    height: 69px;
+    margin-top: 20px;
+    padding-left: 198px;
+    text-size-adjust: none;
+    outline: none;
+}
+
+.juego_conimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    line-height: 69px;
+    transition: opacity 0.25s;
+}
+
+img {
+    border: none;
+    width: 148px;
+    height: 69px;
+}
+
+.juego_precio {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-right: 16px;
+    background: none;
+    margin-top: 23px;
+    width: 150px;
+    margin-right: 50px;
+}
+
+
+.precio_final {
+    color: #BEEE11;
+    line-height: 16px;
+    font-size: 15px;
+}
+
+.juego_contenido {
+    padding-top: 7px;
+}
+
+.juego_nombre {
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    transition: color 0.25s;
+}
+
+.juego_detalles span {
+    vertical-align: bottom;
+    color: #95bcd3;
+}
+
+
+.juego_con_etiquetas {
+    height: 20px;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.juego_con_etiquetas .etiquetas {
+    white-space: nowrap;
+}
+
+/*footer*/
+.footer {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    background: #7b7c7c;
+    margin-top: 20px;
+    color: #252424;
+    bottom: 0;
+}
+.crea{
+    margin-left: 20%;
+}
+
+.crea a{
+    color: #000;
+    text-decoration: none;
+}
+.info{
+    margin-left: 10px;
+}
+.cont_juego {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row;
+}
+
+.imagen {
+    width: 500px;
+    height: 300px;
+    display: inline;
+}
+
+.texto_juego {
+    color: #fff;
+    float: right;
+    margin-left: 15px;
+
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.titulo_juego {
+    font-size: 25px;
+}
+
+.titulo_nosotros {
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.compra {
+    background-color: #FFF;
+    color: #000;
+    float: right;
+    width: 80px;
+    height: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.compra:hover {
+    background-color: #716e6e;
+    color: #ffffff;
+    float: right;
+    width: 80px;
+    height: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.compra2 {
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.compra3 {
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.pul:hover .compra2 {
+    display: none;
+}
+
+.pul:hover .compra3{
+    display: block;
+}
+
+.sesion {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 40px;
+    border-left: #fff 1px;
+    display: contents;
+    text-align: center;
+}
+
+
+.cuenta {
+    margin-left: 75%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-flow: row;
+    margin-top: 10px;
+}
+
+.cuenta a {
+    color: #fff;
+}
+
+.cuenta a:hover {
+    color: #202d39;
+}
+
+.cuenta2:hover .cuenta:hover {
+    background-color: rgba(111, 111, 111, 0.8);
+}
+
+.juego_recomendado {
+    font-size: x-large;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.detalles {
+    color: #084e6a;
+    margin-top: 20px;
+}
+
+.worm {
+    width: 220px;
+    height: 50px;
+}
+
+.sombra {
+    box-shadow: rgb(24, 24, 24) -2px 2px 2px 2px;
+    width: 220px;
+    height: 50px;
+    margin-left: 400px;
+    margin: #000 2px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.sombra:hover {
+    box-shadow: rgb(105, 105, 105) 2px 0px 2px 2px;
+}
+
+.pl {
+    width: 150px;
+    height: 100px;
+    position: static;
+    float: right;
+    z-index: 2;
+}
+
+.ini {
+    width: 150px;
+    height: 30px;
+    position: static;
+    float: right;
+    z-index: 2;
+}
+
+.cuenta i {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.mas:hover .ini {
+    margin-left: 0px;
+}
+
+.container .thumbnail_container .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: .7;
+    transition: .3s;
+}
+
+.peliculas-recomendadas {
+    margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+    background: rgba(190, 190, 190, 0.9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+    left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+    right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+    width: 100%;
+    padding: 30px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+    min-width: 100%;
+
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.altura {
+    height: 500px;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.contenedor-titulo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 410px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+    background: red;
+}
+
+.usu {
+    display: flex;
+
+}
+
+.usu .text {
+    color: #fff;
+    margin-left: 80px;
+}
+
+.estado {
+    color: #11ee2e;
+}
+
+.im {
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+
+.opcion {
+    background-color: #252424;
+    color: #11ee2e;
+    border-radius: 5px;
+}
+
+
+.cdn {
+    background: none;
+    color: #8B888C;
+    border: solid gray;
+
+}
+
+.conte {
+    margin-left: 3px;
+}
+
+.box {
+    width: 165px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 70px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.box-1 {
+    width: 165px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 150px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.texto {
+    color: #fff;
+}
+
+.miembros-texto {
+    margin-left: 16px;
+    color: #11ee2e;
+    text-align: center;
+}
+
+.titulo-de-grupo {
+    text-align: center;
+    color: #fff;
+}
+
+.descripcion-de-grupo {
+    text-align: center;
+}
+
+.img-foro {
+    margin-left: 5px;
+}
+
+.nav-f {
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0%;
+    position: fixed;
+    height: 100%;
+}
+
+.ti {
+    color: #8B888C;
+}
+
+.foros ul {
+    margin: 0;
+    padding: 0;
+}
+
+.foros ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.foros ul li a {
+    background-color: #282a2c;
+    color: azure;
+    border-radius: 3px;
+}
+
+.nuevo-foro {
+    margin-top: 200px;
+    color: #7b7c7c;
+}
+
+.p {
+    margin-left: 50px;
+    background-color: #333436;
+    color: white;
+    border: #5a5a5b;
+    border-radius: 5px;
+}
+
+.conte-p {
+    display: flex;
+
+}
+
+.generos_titulo {
+    color: #fff;
+}
+
+h3{
+	text-decoration:wavy;
+}

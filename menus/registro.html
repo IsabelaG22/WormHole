@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="shortcut icon" href="../imgen/Favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="box">
+        <span class="borderline"></span>
+        <form action="../php/registro.php" method="post">
+            <h2>Registro</h2>
+            <div class="inputbox">
+                <input type="text" required="required" name="usuario">
+                <span>Usuario</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required" name="correo">
+                <span>Correo</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required" name="contra">
+                <span>Contraseña</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="iniciosesion.html">Ya tengo cuenta</a>
+            </div>
+            <input type="submit" value="Crear" name="Crear">
+        </form>
+    </div>
+</body>
+
+</html>
